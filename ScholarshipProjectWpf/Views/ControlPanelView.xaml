@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="ScholarshipProjectWpf.Views.ControlPanelView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ScholarshipProjectWpf.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:Background="Silver">
+    <StackPanel>
+        <Label>Vezérlőpult</Label>
+        <StackPanel Orientation="Horizontal">
+            <Label>Ösztöndíjasok száma:</Label>
+            <Label Content="{Binding NumberOfScholarship}"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Ösztöndíjal rendelkező ösztöndíjasok száma:</Label>
+            <Label Content="{Binding HasAmount}"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Ösztöndíjal nem rendelkező ösztöndíjasok száma:</Label>
+            <Label Content="{Binding HasAmountZero}"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Legnagyobb ösztöndíj:</Label>
+            <Label Content="{Binding HighestnumberScholarship}"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Legkisebb ösztöndíj:</Label>
+            <Label Content="{Binding LowestNumberScholarship}"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Ösztöndíjak összege:</Label>
+            <Label Content="{Binding SumScholarship}"></Label>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label>Ösztöndíjak átlaga:</Label>
+            <Label Content="{Binding AvarageScholarship}"></Label>
+        </StackPanel>
+       
+        
+       
+        
+    </StackPanel>
+</UserControl>
